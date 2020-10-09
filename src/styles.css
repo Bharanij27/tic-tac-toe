@@ -1,0 +1,73 @@
+body{
+    background-color: #000;
+    color: white;
+}
+
+.container{
+    text-align: center;
+}
+
+.app-title{
+    font-size: 50px;
+    font-weight: 750;
+    margin-top: 0px;
+    border-bottom: 3px solid black;
+    font-family: montserrat,sans-serif;
+    position: relative;
+    text-align: center;  
+    letter-spacing: normal;
+}
+
+.game-box{
+    display: inline-block;
+    justify-content: center;
+    border: 5px solid white;
+    letter-spacing: 100px;
+    width: 15%;
+    height: 160px;
+    border-right: none;
+    border-bottom: none;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.game-value{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: scale(2);
+    font-family: cursive;
+}
+
+.first-block{
+    border-left: none;
+}
+
+.r0-row{
+    border-top: none;
+}
+
+.content{
+    font-size: 60px;
+    letter-spacing: normal;
+}
+
+.main-row{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color: blue;
+    padding: 10px 15px;
+    width: max-content;
+    font-size: 20px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    margin-right: 50px;
+    display: inline-block !important;
+    align-items: center !important;
+    border-radius: 8px !important;
+}

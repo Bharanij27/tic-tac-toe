@@ -61,7 +61,7 @@ const App = () => {
     
     const resetTable = () => {
         setPlayValue('X')
-        console.log(playValue)
+        localStorage.setItem('prevPlay', null)
         localStorage.setItem('prevTable', JSON.stringify([[null, null, null], [null, null, null], [null, null, null]]));
         setGameTable([[null, null, null], [null, null, null], [null, null, null]]);
     };

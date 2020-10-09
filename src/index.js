@@ -5,12 +5,13 @@ import GameBoard from './components/GameBoard'
 
 const App = () => {
     let prevTable = JSON.parse(localStorage.getItem('prevTable'));
+    let prevPlay = JSON.parse(localStorage.getItem('prevPlay'));
     
     let table = prevTable || [[null, null, null], [null, null, null], [null, null, null]]
 
     let [gameTable, setGameTable] = useState(table);
 
-    let [playValue, setPlayValue] = useState('X');
+    let [playValue, setPlayValue] = useState(prevPlay || 'X');
 
     const updateTable = (value, index) => {
         index = index.split('');
@@ -26,6 +27,7 @@ const App = () => {
 
     const storeTable = () => {
         localStorage.setItem('prevTable', JSON.stringify(gameTable));
+        localStorage.setItem('prevPlay', JSON.stringify(playValue));
     }
 
     const checkTable = () => {
